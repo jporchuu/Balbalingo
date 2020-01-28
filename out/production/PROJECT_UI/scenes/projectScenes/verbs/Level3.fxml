@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="Pane11" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: FFFFFF;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scenes.projectScenes.verbs.MultipleChoiceController">
+   <children>
+      <Text fill="#6f6f6f" layoutX="317.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Which one of these means &quot;Walwal&quot;?" textAlignment="CENTER">
+         <font>
+            <Font name="Century Gothic" size="36.0" />
+         </font></Text>
+      <JFXButton buttonType="RAISED" ellipsisString="" graphicTextGap="0.0" layoutX="404.0" layoutY="450.0" onAction="#getWrongChoice" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: FFFFFF;">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="150.0">
+               <image>
+                  <Image url="@../../../assets/verbs/dugas.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" ellipsisString="" graphicTextGap="0.0" layoutX="404.0" layoutY="202.0" onAction="#getWrongChoice" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: FFFFFF;">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="150.0">
+               <image>
+                  <Image url="@../../../assets/verbs/mura.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" ellipsisString="" graphicTextGap="0.0" layoutX="675.0" layoutY="202.0" onAction="#getRightChoice" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: FFFFFF;">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="150.0">
+               <image>
+                  <Image url="@../../../assets/verbs/walwal.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" ellipsisString="" graphicTextGap="0.0" layoutX="675.0" layoutY="450.0" onAction="#getWrongChoice" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: FFFFFF;">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="150.0">
+               <image>
+                  <Image url="@../../../assets/verbs/aprub.png" />
+               </image>
+            </ImageView>
+         </graphic></JFXButton>
+      <ImageView fx:id="correct" fitHeight="150.0" fitWidth="200.0" layoutX="128.0" layoutY="377.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../assets/navigation/correct.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="wrong" fitHeight="150.0" fitWidth="200.0" layoutX="1016.0" layoutY="377.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../assets/navigation/wrong.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="forward" fitHeight="69.0" fitWidth="70.0" layoutX="1148.0" layoutY="615.0" onMouseClicked="#getL2Next" opacity="0.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+         <image>
+            <Image url="@../../../assets/navigation/backarrowimg.png" />
+         </image>
+      </ImageView>
+      <JFXButton ellipsisString="" layoutX="61.0" layoutY="67.0" onAction="#back" prefHeight="69.0" prefWidth="62.0">
+         <graphic>
+            <ImageView fitHeight="61.0" fitWidth="61.0" preserveRatio="true">
+               <image>
+                  <Image url="@../../../assets/navigation/backarrowimg.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <Text fill="#656565" layoutX="472.0" layoutY="393.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TO CUSS">
+         <font>
+            <Font name="Century Gothic Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="#656565" layoutX="687.0" layoutY="393.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TO GO OUT AND DRINK">
+         <font>
+            <Font name="Century Gothic Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="#656565" layoutX="458.0" layoutY="646.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TO SWINDLE">
+         <font>
+            <Font name="Century Gothic Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="#656565" layoutX="734.0" layoutY="646.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TO APPROVE">
+         <font>
+            <Font name="Century Gothic Bold" size="16.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

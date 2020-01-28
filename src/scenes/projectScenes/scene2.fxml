@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchorPane2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: FFFFFF;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scenes.projectScenes.Controller2">
+   <children>
+      <ImageView fitHeight="78.0" fitWidth="400.0" layoutX="436.0" layoutY="597.0">
+         <image>
+            <Image url="@../../assets/navigation/completionborder.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="star1" fitHeight="50.0" fitWidth="50.0" layoutX="456.0" layoutY="610.0">
+         <image>
+            <Image url="@../../assets/navigation/starsmall.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="star2" fitHeight="50.0" fitWidth="50.0" layoutX="534.0" layoutY="611.0">
+         <image>
+            <Image url="@../../assets/navigation/starsmall.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="star3" fitHeight="50.0" fitWidth="50.0" layoutX="611.0" layoutY="611.0">
+         <image>
+            <Image url="@../../assets/navigation/starsmall.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="star4" fitHeight="50.0" fitWidth="50.0" layoutX="688.0" layoutY="611.0">
+         <image>
+            <Image url="@../../assets/navigation/starsmall.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="star5" fitHeight="50.0" fitWidth="50.0" layoutX="766.0" layoutY="611.0">
+         <image>
+            <Image url="@../../assets/navigation/starsmall.png" />
+         </image>
+      </ImageView>
+      <Text fill="#656565" layoutX="584.0" layoutY="585.0" strokeType="OUTSIDE" strokeWidth="0.0" text="COMPLETION">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Text>
+      <Circle fx:id="selection1" fill="#abdfec" layoutX="470.0" layoutY="440.0" onMouseClicked="#loadVerbs" radius="60.0" stroke="#abdfec" strokeType="INSIDE">
+         <effect>
+            <DropShadow color="#a4a4a4" height="50.0" radius="24.5" width="50.0" />
+         </effect>
+      </Circle>
+      <Circle fx:id="selection2" fill="#ff5f5f" layoutX="636.0" layoutY="261.0" onMouseClicked="#loadTime" radius="60.0" stroke="#ff5f5f" strokeType="INSIDE" strokeWidth="0.0">
+         <effect>
+            <DropShadow color="#a4a4a4" height="50.0" radius="24.5" width="50.0" />
+         </effect>
+      </Circle>
+      <Circle fx:id="selection4" fill="#dfd7cc" layoutX="964.0" layoutY="261.0" onMouseClicked="#loadPeople" radius="60.0" stroke="#dfd7cc" strokeType="INSIDE">
+         <effect>
+            <DropShadow color="#a4a4a4" height="50.0" radius="24.5" width="50.0" />
+         </effect>
+      </Circle>
+      <Circle fx:id="selection5" fill="#c7f0e0" layoutX="321.0" layoutY="261.0" onMouseClicked="#loadMoney" radius="60.0" stroke="#c7f0e0" strokeType="INSIDE">
+         <effect>
+            <DropShadow color="#a4a4a4" height="50.0" radius="24.5" width="50.0" />
+         </effect>
+      </Circle>
+      <Text fill="#656565" layoutX="292.0" layoutY="354.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MONEY">
+         <font>
+            <Font name="Century Gothic Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="#656565" layoutX="301.0" layoutY="376.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PERA">
+         <font>
+            <Font name="Century Gothic Italic" size="16.0" />
+         </font>
+      </Text>
+      <Circle fx:id="selection6" fill="#ffd6a4" layoutX="802.0" layoutY="440.0" onMouseClicked="#loadFood" radius="60.0" stroke="#ffd6a4" strokeType="INSIDE">
+         <effect>
+            <DropShadow color="#a4a4a4" height="50.0" radius="24.5" width="50.0" />
+         </effect>
+      </Circle>
+      <Text fill="#656565" layoutX="619.0" layoutY="353.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TIME">
+         <font>
+            <Font name="Century Gothic Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="#656565" layoutX="937.0" layoutY="353.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PEOPLE">
+         <font>
+            <Font name="Century Gothic Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="#656565" layoutX="447.0" layoutY="537.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VERBS">
+         <font>
+            <Font name="Century Gothic Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="#656565" layoutX="779.0" layoutY="537.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FOOD">
+         <font>
+            <Font name="Century Gothic Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="#686868" layoutX="453.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SELECT A TOPIC" textAlignment="CENTER" wrappingWidth="374.0546875">
+         <font>
+            <Font name="Century Gothic Bold" size="36.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="95.0" fitWidth="95.0" layoutX="274.0" layoutY="214.0" onMouseClicked="#loadMoney" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../assets/navigation/pesos.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="S1P1" fitHeight="37.0" fitWidth="50.0" layoutX="296.0" layoutY="150.0">
+         <image>
+            <Image url="@../../assets/navigation/Progress1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="S1P2" fitHeight="37.0" fitWidth="50.0" layoutX="296.0" layoutY="150.0">
+         <image>
+            <Image url="@../../assets/navigation/Progress2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="S1P3" fitHeight="37.0" fitWidth="50.0" layoutX="296.0" layoutY="150.0">
+         <image>
+            <Image url="@../../assets/navigation/Progress3.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="S2P1" fitHeight="37.0" fitWidth="50.0" layoutX="611.0" layoutY="150.0">
+         <image>
+            <Image url="@../../assets/navigation/Progress1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="S2P2" fitHeight="37.0" fitWidth="50.0" layoutX="611.0" layoutY="150.0">
+         <image>
+            <Image url="@../../assets/navigation/Progress2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="S2P3" fitHeight="37.0" fitWidth="50.0" layoutX="611.0" layoutY="150.0">
+         <image>
+            <Image url="@../../assets/navigation/Progress3.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="571.0" layoutY="197.0" onMouseClicked="#loadTime">
+         <image>
+            <Image url="@../../assets/navigation/clock.png" />
+         </image>
+      </ImageView>
+      <Text fill="#656565" layoutX="616.0" layoutY="375.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ORAS">
+         <font>
+            <Font name="Century Gothic Italic" size="16.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="95.0" fitWidth="95.0" layoutX="917.0" layoutY="215.0" onMouseClicked="#loadPeople">
+         <image>
+            <Image url="@../../assets/navigation/family.png" />
+         </image>
+      </ImageView>
+      <Text fill="#656565" layoutX="948.0" layoutY="375.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TAO">
+         <font>
+            <Font name="Century Gothic Italic" size="16.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="S3P1" fitHeight="37.0" fitWidth="50.0" layoutX="940.0" layoutY="150.0">
+         <image>
+            <Image url="@../../assets/navigation/Progress1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="S3P2" fitHeight="37.0" fitWidth="50.0" layoutX="940.0" layoutY="150.0">
+         <image>
+            <Image url="@../../assets/navigation/Progress2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="S3P3" fitHeight="37.0" fitWidth="50.0" layoutX="940.0" layoutY="150.0">
+         <image>
+            <Image url="@../../assets/navigation/Progress3.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="90.0" fitWidth="90.0" layoutX="425.0" layoutY="395.0" onMouseClicked="#loadVerbs">
+         <image>
+            <Image url="@../../assets/navigation/verb.png" />
+         </image>
+      </ImageView>
+      <Text fill="#656565" layoutX="432.0" layoutY="557.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PANDIWA">
+         <font>
+            <Font name="Century Gothic Italic" size="16.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="110.0" fitWidth="110.0" layoutX="747.0" layoutY="385.0" onMouseClicked="#loadFood">
+         <image>
+            <Image url="@../../assets/navigation/food.png" />
+         </image>
+      </ImageView>
+      <Text fill="#656565" layoutX="766.0" layoutY="557.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PAGKAIN">
+         <font>
+            <Font name="Century Gothic Italic" size="16.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="S4P1" fitHeight="37.0" fitWidth="50.0" layoutX="445.0" layoutY="329.0">
+         <image>
+            <Image url="@../../assets/navigation/Progress1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="S4P2" fitHeight="37.0" fitWidth="50.0" layoutX="445.0" layoutY="329.0">
+         <image>
+            <Image url="@../../assets/navigation/Progress2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="S4P3" fitHeight="37.0" fitWidth="50.0" layoutX="445.0" layoutY="329.0">
+         <image>
+            <Image url="@../../assets/navigation/Progress3.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="S5P1" fitHeight="37.0" fitWidth="50.0" layoutX="777.0" layoutY="329.0">
+         <image>
+            <Image url="@../../assets/navigation/Progress1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="S5P2" fitHeight="37.0" fitWidth="50.0" layoutX="777.0" layoutY="329.0">
+         <image>
+            <Image url="@../../assets/navigation/Progress2.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="S5P3" fitHeight="37.0" fitWidth="50.0" layoutX="777.0" layoutY="329.0">
+         <image>
+            <Image url="@../../assets/navigation/Progress3.png" />
+         </image>
+      </ImageView>
+      <Rectangle fx:id="yellowRect" arcHeight="5.0" arcWidth="5.0" fill="#ffc607" height="50.0" layoutX="-96.0" layoutY="620.0" stroke="#ffc607" strokeType="INSIDE" width="264.0">
+         <effect>
+            <DropShadow color="#838383" height="40.0" radius="19.5" width="40.0" />
+         </effect>
+      </Rectangle>
+      <Rectangle fx:id="blueRect" arcHeight="5.0" arcWidth="5.0" fill="#2673f3" height="50.0" layoutX="-96.0" layoutY="430.0" stroke="#2673f3" strokeType="INSIDE" width="264.0">
+         <effect>
+            <DropShadow color="#838383" height="40.0" radius="19.5" width="40.0" />
+         </effect>
+      </Rectangle>
+      <Rectangle fx:id="redRect" arcHeight="5.0" arcWidth="5.0" fill="#d9442e" height="50.0" layoutX="-96.0" layoutY="526.0" stroke="#d9442e" strokeType="INSIDE" width="264.0">
+         <effect>
+            <DropShadow color="#838383" height="40.0" radius="19.5" width="40.0" />
+         </effect>
+      </Rectangle>
+      <Rectangle fx:id="whiteRect" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="50.0" layoutX="-96.0" layoutY="330.0" stroke="WHITE" strokeType="INSIDE" width="264.0">
+         <effect>
+            <DropShadow color="#838383" height="40.0" radius="19.5" width="40.0" />
+         </effect>
+      </Rectangle>
+   </children>
+   <effect>
+      <InnerShadow color="#4a4a4a" height="75.0" radius="37.0" width="75.0" />
+   </effect>
+</AnchorPane>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="parentContainer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scenes.projectScenes.Controller1">
+   <children>
+      <AnchorPane id="AnchorPane" fx:id="anchorRoot" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: ffc607;">
+         <children>
+            <Rectangle fx:id="redRect" arcHeight="5.0" arcWidth="5.0" fill="#d9442e" height="309.0" layoutX="135.0" stroke="#d9442e" strokeType="INSIDE" width="147.0">
+               <effect>
+                  <DropShadow color="#171717" height="60.91" radius="29.955" width="60.91" />
+               </effect>
+            </Rectangle>
+            <Rectangle fx:id="blueRect" arcHeight="5.0" arcWidth="5.0" fill="#2673f3" height="480.0" stroke="#2673f3" strokeType="INSIDE" width="147.0">
+               <effect>
+                  <DropShadow color="#171717" height="60.91" radius="29.955" width="60.91" />
+               </effect>
+            </Rectangle>
+            <ImageView fx:id="titleLogo" fitHeight="458.0" fitWidth="806.0" layoutX="237.0" layoutY="34.0">
+               <image>
+                  <Image url="@../../assets/logoLong.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="whiteButton" buttonType="RAISED" layoutY="545.0" onAction="#loadScene" prefHeight="178.0" prefWidth="1280.0" ripplerFill="#ffc607" style="-fx-background-color: FFFFFF;" text="START LEARNING !">
+               <font>
+                  <Font name="Century Gothic Bold" size="36.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

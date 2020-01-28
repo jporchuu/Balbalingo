@@ -1,0 +1,21 @@
+#JSGF V1.0;
+
+/**
+ * JSGF Grammar for Hello World example
+ */
+
+grammar hello;
+
+public <food> = (chicken | hamburger | spaghetti | beef | pork | vegetables);
+
+public <foodactual> = (chicken) (feet | head | blood);
+
+public <money> = (twenty | fifty | one | five | ten | fifteen);
+
+public <people> = (filipino | american | girlfriend | boyfriend | grandfather | grandfather | father | mother | brother | sister | son | daughter);
+
+public <time> = (one | two | three | four | five | six | seven | eight | nine | ten | eleven | twelve) (o'clock);
+
+public <verbs> = (eat | cheat | swindle | swear | drink | borrow);
+
+public <toverbs> = (to) (eat | cheat | swindle | swear | drink | borrow);
